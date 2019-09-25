@@ -1,0 +1,86 @@
+{
+	"Champion"        : "Sylas",
+	"Role"            : "Jungle",
+
+	"Skin"            : "Lunar Wraith",
+	"Chroma"          : "Obsidian",
+
+	"Creator"         : "JDog",
+	"Patch"           : "v9.16",
+
+	"Summoner Spells" : [
+		"Smite",
+		"Flash"
+	],
+
+	"Runes"           : {
+		"Paths"         : [
+			"Precision",
+			"Inspiration"
+		],
+		"Primary"       : [
+			"Conqueror",
+			"Triumph",
+			"Legend: Tenacity",
+			"Last Stand"
+		],
+		"Secondary"     : [
+			"Magical Footwear",
+			"Cosmic Insight"
+		],
+		"Shards"        : [
+			"Attack Speed",
+			"Adaptive Force",
+			"Armor"
+		]
+	},
+
+	"Abilities"       : "EQWQQRQWQWRWWEEREE",
+
+	"Items"           : [
+		{
+			"Label"       : "Start",
+			"Options"     : [
+				"Hunter's Talisman",
+				"Refillable Potion",
+				"Warding Totem"
+			]
+		},
+		{
+			"Label"       : "Pick 1",
+			"Options"     : [
+				"Skirmisher's Sabre (Runic Echoes)",
+				"Stalker's Blade (Runic Echoes)"
+			]
+		},
+		{
+			"Label"       : "Core",
+			"Options"     : [
+				"Sorcerer's Shoes",
+				"Hextech Protobelt-01",
+				"Zhonya's Hourglass",
+				"Oracle Lens"
+			]
+		},
+		{
+			"Label"       : "Pick 2",
+			"Options"     : [
+				"Lich Bane",
+				"Morellonomicon",
+				"Rylai's Crystal Scepter",
+				"Liandry's Torment",
+				"Banshee's Veil",
+				"Void Staff",
+				"Rabadon's Deathcap",
+				"Mejai's Soulstealer"
+			]
+		},
+		{
+			"Label"       : "Consumables",
+			"Options"     : [
+				"Elixir of Sorcery",
+				"Control Ward"
+			]
+		}
+	]
+}
