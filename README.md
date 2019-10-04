@@ -2,7 +2,7 @@
 
 Generates League of Legends build images from data files.
 
-See `sylas.json` and `sylas.png` for an example.
+See the `examples` folder for examples (duh). Each `.json` corresponds to a `.png`, so `python shopkeeper.py sylas.json` will create `sylas.png`.
 
 If an expected key is missing from the input, its corresponding image section will be missing from the output.
 

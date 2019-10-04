@@ -1,0 +1,85 @@
+{
+	"Champion"        : "Zed",
+	"Role"            : "Middle",
+
+	"Skin"            : "Shockblade",
+	"Chroma"          : "Emerald",
+
+	"Creator"         : "JDog",
+	"Patch"           : "v9.16",
+
+	"Summoner Spells" : [
+		"Ignite",
+		"Flash"
+	],
+
+	"Runes"           : {
+		"Paths"         : [
+			"Domination",
+			"Precision"
+		],
+		"Primary"       : [
+			"Electrocute",
+			"Sudden Impact",
+			"Eyeball Collection",
+			"Ultimate Hunter"
+		],
+		"Secondary"     : [
+			"Triumph",
+			"Coup de Grace"
+		],
+		"Shards"        : [
+			"Adaptive Force",
+			"Adaptive Force",
+			"Magic Resistance"
+		]
+	},
+
+	"Abilities"       : "QEWQQRQEQEREEWWRWW",
+
+	"Items"           : [
+		{
+			"Label"       : "Start",
+			"Options"     : [
+				"Long Sword",
+				"Health Potion",
+				"Warding Totem"
+			]
+		},
+		{
+			"Label"       : "Pick 1",
+			"Options"     : [
+				"Mercury's Treads",
+				"Ninja Tabi"
+			]
+		},
+		{
+			"Label"       : "Core",
+			"Options"     : [
+				"Youmuu's Ghostblade",
+				"Duskblade of Draktharr",
+				"Oracle Lens"
+			]
+		},
+		{
+			"Label"       : "Pick 3",
+			"Options"     : [
+				"Black Cleaver",
+				"Edge of Night",
+				"Lord Dominik's Regards",
+				"Mortal Reminder",
+				"Maw of Malmortius",
+				"Phantom Dancer",
+				"Guardian Angel",
+				"Titanic Hydra"
+			]
+		},
+		{
+			"Label"       : "Consumables",
+			"Options"     : [
+				"Elixir of Wrath",
+				"Control Ward"
+			]
+		}
+	]
+}

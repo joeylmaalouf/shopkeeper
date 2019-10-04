@@ -1,0 +1,77 @@
+{
+	"Champion"        : "Katarina",
+	"Role"            : "Middle",
+
+	"Skin"            : "Warring Kingdoms",
+
+	"Creator"         : "JDog",
+	"Patch"           : "v9.16",
+
+	"Summoner Spells" : [
+		"Ignite",
+		"Flash"
+	],
+
+	"Runes"           : {
+		"Paths"         : [
+			"Domination",
+			"Precision"
+		],
+		"Primary"       : [
+			"Electrocute",
+			"Sudden Impact",
+			"Eyeball Collection",
+			"Ravenous Hunter"
+		],
+		"Secondary"     : [
+			"Triumph",
+			"Coup de Grace"
+		],
+		"Shards"        : [
+			"Adaptive Force",
+			"Adaptive Force",
+			"Magic Resistance"
+		]
+	},
+
+	"Abilities"       : "QEWQQRQEQEREEWWRWW",
+
+	"Items"           : [
+		{
+			"Label"       : "Start",
+			"Options"     : [
+				"Long Sword",
+				"Health Potion",
+				"Warding Totem"
+			]
+		},
+		{
+			"Label"       : "Core",
+			"Options"     : [
+				"Sorcerer's Shoes",
+				"Hextech Gunblade",
+				"Zhonya's Hourglass"
+			]
+		},
+		{
+			"Label"       : "Pick 3",
+			"Options"     : [
+				"Morellonomicon",
+				"Rabadon's Deathcap",
+				"Void Staff",
+				"Mejai's Soulstealer",
+				"Death's Dance",
+				"Liandry's Torment",
+				"Banshee's Veil",
+				"Mercurial Scimitar"
+			]
+		},
+		{
+			"Label"       : "Consumables",
+			"Options"     : [
+				"Elixir of Sorcery",
+				"Control Ward"
+			]
+		}
+	]
+}

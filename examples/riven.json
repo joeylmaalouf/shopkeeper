@@ -1,0 +1,83 @@
+{
+	"Champion"        : "Riven",
+	"Role"            : "Top",
+
+	"Skin"            : "Dragonblade",
+
+	"Creator"         : "JDog",
+	"Patch"           : "v9.16",
+
+	"Summoner Spells" : [
+		"Teleport",
+		"Flash"
+	],
+
+	"Runes"           : {
+		"Paths"         : [
+			"Precision",
+			"Inspiration"
+		],
+		"Primary"       : [
+			"Conqueror",
+			"Triumph",
+			"Legend: Alacrity",
+			"Coup de Grace"
+		],
+		"Secondary"     : [
+			"Magical Footwear",
+			"Cosmic Insight"
+		],
+		"Shards"        : [
+			"Adaptive Force",
+			"Adaptive Force",
+			"Armor"
+		]
+	},
+
+	"Abilities"       : "QEWQQRQEQEREEWWRWW",
+
+	"Items"           : [
+		{
+			"Label"       : "Start",
+			"Options"     : [
+				"Long Sword",
+				"Health Potion",
+				"Warding Totem"
+			]
+		},
+		{
+			"Label"       : "Pick 1",
+			"Options"     : [
+				"Ninja Tabi",
+				"Mercury's Treads"
+			]
+		},
+		{
+			"Label"       : "Core",
+			"Options"     : [
+				"Black Cleaver",
+				"Death's Dance"
+			]
+		},
+		{
+			"Label"       : "Pick 2",
+			"Options"     : [
+				"Guardian Angel",
+				"Sterak's Gage",
+				"Mercurial Scimitar",
+				"Ravenous Hydra",
+				"Spear of Shojin",
+				"Maw of Malmortius",
+				"Mortal Reminder",
+				"Youmuu's Ghostblade"
+			]
+		},
+		{
+			"Label"       : "Consumables",
+			"Options"     : [
+				"Elixir of Wrath",
+				"Control Ward"
+			]
+		}
+	]
+}
