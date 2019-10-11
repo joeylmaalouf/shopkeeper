@@ -49,26 +49,24 @@
 			"Label"       : "Pick 1",
 			"Options"     : [
 				"Ninja Tabi",
-				"Mercury's Treads"
+				"Mercury's Treads",
+				"Ionian Boots of Lucidity"
 			]
 		},
 		{
-			"Label"       : "Core",
+			"Label"       : "Pick 5",
 			"Options"     : [
 				"Black Cleaver",
-				"Death's Dance"
-			]
-		},
-		{
-			"Label"       : "Pick 2",
-			"Options"     : [
+				"Death's Dance",
 				"Guardian Angel",
+				"Essence Reaver",
 				"Sterak's Gage",
-				"Mercurial Scimitar",
-				"Ravenous Hydra",
-				"Spear of Shojin",
 				"Maw of Malmortius",
+				"Mercurial Scimitar",
+				"Spear of Shojin",
+				"Ravenous Hydra",
 				"Mortal Reminder",
+				"Edge of Night",
 				"Youmuu's Ghostblade"
 			]
 		},

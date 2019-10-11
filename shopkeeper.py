@@ -11,6 +11,7 @@ import sys
 BUILD_IMAGE_DIMENSIONS = (1920, 1080)
 BACKGROUND_ALPHA = 55
 DRAW_COLOR = (50, 50, 50)
+BACK_COLOR = (0, 0, 0)
 TEXT_COLOR = (100, 100, 100)
 TRANSPARENCY_THRESHOLD = 64
 LETTER_OPTIONS = ('Q', 'W', 'E', 'R')
@@ -276,7 +277,7 @@ def draw_items(build_image, build_data):
 
 			for item_name in option_list:
 				outline_rectangle = ((x_offset - 65, y_offset), (x_offset, y_offset + 65))
-				item_drawer.rectangle(outline_rectangle, None, DRAW_COLOR)
+				item_drawer.rectangle(outline_rectangle, BACK_COLOR, DRAW_COLOR)
 
 				# we have special logic for getting enchantable item images, if they have a valid enchantment specified in parentheses
 				item_image = None
@@ -301,7 +302,8 @@ def draw_items(build_image, build_data):
 					item_image = item_images.get(item_name.replace('\'', '&#39;'))
 
 				if item_image:
-					build_image.paste(item_image, (x_offset - 65 + 1, y_offset + 1))
+					item_mask = item_image if 'A' in item_image.mode else None
+					build_image.paste(item_image, (x_offset - 65 + 1, y_offset + 1), item_mask)
 				y_offset += 33 + 65
 
 			x_offset -= 65 + 65
