@@ -285,7 +285,7 @@ def draw_items(build_image, build_data):
 					if re.search(r'^%s \(.*?\)$' % enchantable_item, item_name):
 						enchantment_images = get_images(
 							'/'.join((WIKI_BASE_URL, enchantable_item)),
-							re.compile(r'<a href=".*?"><img src="(%s).*?" alt="(.*?)"></a>' % WIKI_IMAGE_URL_PATTERN),
+							re.compile(r'<img style="" src="(%s).*?" title=".*?\((.*?)\).*?"></a>' % WIKI_IMAGE_URL_PATTERN),
 							True
 						)
 						for enchantment_name in enchantment_images.keys():

@@ -1,0 +1,93 @@
+{
+	"Champion"        : "Sylas",
+	"Role"            : "Jungle",
+
+	"Skin"            : "Freljord",
+	"Chroma"          : "Turquoise",
+
+	"Creator"         : "JDog",
+	"Patch"           : "v10.1",
+
+	"Summoner Spells" : [
+		"Smite",
+		"Flash"
+	],
+
+	"Runes"           : {
+		"Paths"         : [
+			"Precision",
+			"Domination"
+		],
+		"Primary"       : [
+			"Conqueror",
+			"Presence of Mind",
+			"Legend: Tenacity",
+			"Last Stand"
+		],
+		"Secondary"     : [
+			"Sudden Impact",
+			"Ravenous Hunter"
+		],
+		"Shards"        : [
+			"Attack Speed",
+			"Adaptive Force",
+			"Armor"
+		]
+	},
+
+	"Abilities"       : "EQWQQRQWQWRWWEEREE",
+
+	"Items"           : [
+		{
+			"Label"       : "Start",
+			"Options"     : [
+				"Hunter's Talisman",
+				"Refillable Potion",
+				"Oracle Lens"
+			]
+		},
+		{
+			"Label"       : "Pick 1",
+			"Options"     : [
+				"Stalker's Blade (Runic Echoes)",
+				"Skirmisher's Sabre (Runic Echoes)"
+			]
+		},
+		{
+			"Label"       : "Pick 1",
+			"Options"     : [
+				"Sorcerer's Shoes",
+				"Mercury's Treads",
+				"Ninja Tabi"
+			]
+		},
+		{
+			"Label"       : "Pick 4",
+			"Options"     : [
+				"Hextech Protobelt-01",
+				"Rod of Ages",
+				"Iceborn Gauntlet",
+				"Spirit Visage",
+				"Nashor's Tooth",
+				"Lich Bane",
+				"Zhonya's Hourglass",
+				"Hextech Gunblade",
+				"Morellonomicon",
+				"Rylai's Crystal Scepter",
+				"Liandry's Torment",
+				"Frozen Heart",
+				"Banshee's Veil",
+				"Rabadon's Deathcap",
+				"Void Staff",
+				"Luden's Echo"
+			]
+		},
+		{
+			"Label"       : "Consumables",
+			"Options"     : [
+				"Elixir of Sorcery",
+				"Control Ward"
+			]
+		}
+	]
+}
