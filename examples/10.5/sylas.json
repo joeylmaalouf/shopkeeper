@@ -6,7 +6,7 @@
 	"Chroma"          : "Turquoise",
 
 	"Creator"         : "JDog",
-	"Patch"           : "v10.1",
+	"Patch"           : "v10.5",
 
 	"Summoner Spells" : [
 		"Smite",
@@ -20,7 +20,7 @@
 		],
 		"Primary"       : [
 			"Conqueror",
-			"Presence of Mind",
+			"Triumph",
 			"Legend: Tenacity",
 			"Last Stand"
 		],
@@ -35,7 +35,7 @@
 		]
 	},
 
-	"Abilities"       : "EQWQQRQWQWRWWEEREE",
+	"Abilities"       : "EQWWWRWQWQRQQEEREE",
 
 	"Items"           : [
 		{
@@ -49,8 +49,8 @@
 		{
 			"Label"       : "Pick 1",
 			"Options"     : [
-				"Stalker's Blade (Runic Echoes)",
-				"Skirmisher's Sabre (Runic Echoes)"
+				"Skirmisher's Sabre (Runic Echoes)",
+				"Stalker's Blade (Runic Echoes)"
 			]
 		},
 		{
@@ -65,16 +65,16 @@
 			"Label"       : "Pick 4",
 			"Options"     : [
 				"Hextech Protobelt-01",
-				"Rod of Ages",
 				"Iceborn Gauntlet",
 				"Spirit Visage",
-				"Nashor's Tooth",
+				"Liandry's Torment",
+				"Hextech Gunblade",
 				"Lich Bane",
 				"Zhonya's Hourglass",
-				"Hextech Gunblade",
-				"Morellonomicon",
 				"Rylai's Crystal Scepter",
-				"Liandry's Torment",
+				"Morellonomicon",
+				"Rod of Ages",
+				"Nashor's Tooth",
 				"Frozen Heart",
 				"Banshee's Veil",
 				"Rabadon's Deathcap",
