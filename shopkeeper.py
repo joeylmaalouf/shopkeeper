@@ -25,8 +25,8 @@ FONT_SIZES = {
 FONT_HEIGHT_BONUS = 2 # the font is usually drawn a few pixels short of its supposed height
 FONT_FILEPATH = '/mnt/c/Windows/Fonts/CarroisGothicSC-Regular.ttf'
 WIKI_BASE_URL = 'https://leagueoflegends.fandom.com/wiki'
-WIKI_IMAGE_URL_PATTERN = r'https://vignette\.wikia\.nocookie\.net/leagueoflegends/images/.*?\.(?:jpg|png)'
-ENCHANTABLE_ITEMS = ['Stalker\'s Blade', 'Skirmisher\'s Sabre', 'Tracker\'s Knife', 'Pridestalker\'s Blade']
+WIKI_IMAGE_URL_PATTERN = r'https://vignette\.wikia\.nocookie\.net/leagueoflegends/images/.+?\.(?:jpg|png)'
+ENCHANTABLE_ITEMS = ['Stalker\'s Blade', 'Skirmisher\'s Sabre', 'Pridestalker\'s Blade', 'Tracker\'s Knife',  'Ranger\'s Trailblazer',  'Poacher\'s Knife']
 
 
 # main: loads the given data from sys_argv and runs each draw function in succession to get the final image
@@ -285,7 +285,7 @@ def draw_items(build_image, build_data):
 					if re.search(r'^%s \(.*?\)$' % enchantable_item, item_name):
 						enchantment_images = get_images(
 							'/'.join((WIKI_BASE_URL, enchantable_item)),
-							re.compile(r'<img style="" src="(%s).*?" title=".*?\((.*?)\).*?"></a>' % WIKI_IMAGE_URL_PATTERN),
+							re.compile(r'<img (?:style="" )?src="(%s).*?".*?alt="(?:[^"]*?\()?(.+?)(?:\)[^"]*?)?"' % WIKI_IMAGE_URL_PATTERN),
 							True
 						)
 						for enchantment_name in enchantment_images.keys():
