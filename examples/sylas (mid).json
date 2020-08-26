@@ -1,35 +1,35 @@
 {
 	"Champion"        : "Sylas",
-	"Role"            : "Jungle",
+	"Role"            : "Middle",
 
 	"Skin"            : "Freljord",
 	"Chroma"          : "Turquoise",
 
 	"Creator"         : "JDog",
-	"Patch"           : "v10.5",
+	"Patch"           : "v10.15",
 
 	"Summoner Spells" : [
-		"Smite",
+		"Ignite",
 		"Flash"
 	],
 
 	"Runes"           : {
 		"Paths"         : [
 			"Precision",
-			"Domination"
+			"Inspiration"
 		],
 		"Primary"       : [
-			"Conqueror",
-			"Triumph",
+			"Fleet Footwork",
+			"Presence of Mind",
 			"Legend: Tenacity",
 			"Last Stand"
 		],
 		"Secondary"     : [
-			"Sudden Impact",
-			"Ravenous Hunter"
+			"Biscuit Delivery",
+			"Time Warp Tonic"
 		],
 		"Shards"        : [
-			"Attack Speed",
+			"Cooldown Reduction",
 			"Adaptive Force",
 			"Armor"
 		]
@@ -41,16 +41,15 @@
 		{
 			"Label"       : "Start",
 			"Options"     : [
-				"Hunter's Talisman",
-				"Refillable Potion",
-				"Oracle Lens"
+				"Corrupting Potion",
+				"Warding Totem"
 			]
 		},
 		{
-			"Label"       : "Pick 1",
+			"Label"       : "Core",
 			"Options"     : [
-				"Skirmisher's Sabre (Runic Echoes)",
-				"Stalker's Blade (Runic Echoes)"
+				"Dark Seal",
+				"Lost Chapter"
 			]
 		},
 		{
@@ -68,18 +67,18 @@
 				"Iceborn Gauntlet",
 				"Spirit Visage",
 				"Liandry's Torment",
-				"Nashor's Tooth",
 				"Lich Bane",
 				"Zhonya's Hourglass",
 				"Morellonomicon",
+				"Nashor's Tooth",
+				"Mejai's Soulstealer",
 				"Rabadon's Deathcap",
 				"Void Staff",
 				"Banshee's Veil",
-				"Rylai's Crystal Scepter",
 				"Abyssal Mask",
 				"Rod of Ages",
 				"Hextech Gunblade",
-				"Frozen Heart"
+				"Hextech GLP-800"
 			]
 		},
 		{

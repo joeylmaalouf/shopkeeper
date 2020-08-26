@@ -2,11 +2,11 @@
 	"Champion"        : "Sylas",
 	"Role"            : "Jungle",
 
-	"Skin"            : "Lunar Wraith",
-	"Chroma"          : "Obsidian",
+	"Skin"            : "Freljord",
+	"Chroma"          : "Turquoise",
 
 	"Creator"         : "JDog",
-	"Patch"           : "v9.16",
+	"Patch"           : "v10.15",
 
 	"Summoner Spells" : [
 		"Smite",
@@ -16,17 +16,17 @@
 	"Runes"           : {
 		"Paths"         : [
 			"Precision",
-			"Inspiration"
+			"Domination"
 		],
 		"Primary"       : [
 			"Conqueror",
-			"Triumph",
+			"Presence of Mind",
 			"Legend: Tenacity",
 			"Last Stand"
 		],
 		"Secondary"     : [
-			"Magical Footwear",
-			"Cosmic Insight"
+			"Eyeball Collection",
+			"Ravenous Hunter"
 		],
 		"Shards"        : [
 			"Attack Speed",
@@ -35,7 +35,7 @@
 		]
 	},
 
-	"Abilities"       : "EQWQQRQWQWRWWEEREE",
+	"Abilities"       : "EQWQQRWWWWREEEERQQ",
 
 	"Items"           : [
 		{
@@ -43,7 +43,7 @@
 			"Options"     : [
 				"Hunter's Talisman",
 				"Refillable Potion",
-				"Warding Totem"
+				"Oracle Lens"
 			]
 		},
 		{
@@ -54,25 +54,32 @@
 			]
 		},
 		{
-			"Label"       : "Core",
+			"Label"       : "Pick 1",
 			"Options"     : [
 				"Sorcerer's Shoes",
-				"Hextech Protobelt-01",
-				"Zhonya's Hourglass",
-				"Oracle Lens"
+				"Mercury's Treads",
+				"Ninja Tabi"
 			]
 		},
 		{
-			"Label"       : "Pick 2",
+			"Label"       : "Pick 4",
 			"Options"     : [
-				"Lich Bane",
-				"Morellonomicon",
-				"Rylai's Crystal Scepter",
+				"Hextech Protobelt-01",
+				"Iceborn Gauntlet",
+				"Spirit Visage",
 				"Liandry's Torment",
-				"Banshee's Veil",
-				"Void Staff",
+				"Lich Bane",
+				"Zhonya's Hourglass",
+				"Morellonomicon",
+				"Nashor's Tooth",
+				"Mejai's Soulstealer",
 				"Rabadon's Deathcap",
-				"Mejai's Soulstealer"
+				"Void Staff",
+				"Banshee's Veil",
+				"Abyssal Mask",
+				"Rod of Ages",
+				"Hextech Gunblade",
+				"Hextech GLP-800"
 			]
 		},
 		{

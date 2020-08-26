@@ -2,10 +2,11 @@
 	"Champion"        : "Riven",
 	"Role"            : "Top",
 
-	"Skin"            : "Dragonblade",
+	"Skin"            : "Spirit Blossom",
+	"Chroma"          : "Night Blossom",
 
 	"Creator"         : "JDog",
-	"Patch"           : "v9.16",
+	"Patch"           : "v10.15",
 
 	"Summoner Spells" : [
 		"Teleport",
@@ -21,14 +22,14 @@
 			"Conqueror",
 			"Triumph",
 			"Legend: Alacrity",
-			"Coup de Grace"
+			"Last Stand"
 		],
 		"Secondary"     : [
 			"Magical Footwear",
 			"Cosmic Insight"
 		],
 		"Shards"        : [
-			"Adaptive Force",
+			"Cooldown Reduction",
 			"Adaptive Force",
 			"Armor"
 		]
@@ -58,16 +59,20 @@
 			"Options"     : [
 				"Black Cleaver",
 				"Death's Dance",
-				"Guardian Angel",
 				"Essence Reaver",
+				"Guardian Angel",
 				"Sterak's Gage",
 				"Maw of Malmortius",
-				"Mercurial Scimitar",
-				"Spear of Shojin",
+				"Phantom Dancer",
+				"Infinity Edge",
 				"Ravenous Hydra",
-				"Mortal Reminder",
 				"Edge of Night",
-				"Youmuu's Ghostblade"
+				"Youmuu's Ghostblade",
+				"Duskblade of Draktharr",
+				"Mercurial Scimitar",
+				"Mortal Reminder",
+				"Lord Dominik's Regards",
+				"Randuin's Omen"
 			]
 		},
 		{
