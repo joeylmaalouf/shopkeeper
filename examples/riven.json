@@ -49,8 +49,8 @@
 		{
 			"Label"       : "Pick 1",
 			"Options"     : [
-				"Ninja Tabi",
 				"Mercury's Treads",
+				"Ninja Tabi",
 				"Ionian Boots of Lucidity"
 			]
 		},

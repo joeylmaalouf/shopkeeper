@@ -63,22 +63,22 @@
 		{
 			"Label"       : "Pick 4",
 			"Options"     : [
+				"Luden's Echo",
+				"Hextech GLP-800",
 				"Hextech Protobelt-01",
-				"Iceborn Gauntlet",
-				"Spirit Visage",
-				"Liandry's Torment",
-				"Lich Bane",
+				"Hextech Gunblade",
 				"Zhonya's Hourglass",
-				"Morellonomicon",
-				"Nashor's Tooth",
 				"Mejai's Soulstealer",
 				"Rabadon's Deathcap",
 				"Void Staff",
-				"Banshee's Veil",
-				"Abyssal Mask",
+				"Lich Bane",
+				"Nashor's Tooth",
+				"Morellonomicon",
+				"Liandry's Torment",
 				"Rod of Ages",
-				"Hextech Gunblade",
-				"Hextech GLP-800"
+				"Banshee's Veil",
+				"Spirit Visage",
+				"Iceborn Gauntlet"
 			]
 		},
 		{
