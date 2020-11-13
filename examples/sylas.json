@@ -1,35 +1,35 @@
 {
 	"Champion"        : "Sylas",
-	"Role"            : "Jungle",
+	"Role"            : "Middle",
 
 	"Skin"            : "Freljord",
 	"Chroma"          : "Turquoise",
 
 	"Creator"         : "JDog",
-	"Patch"           : "v10.15",
+	"Patch"           : "v10.23",
 
 	"Summoner Spells" : [
-		"Smite",
+		"Teleport",
 		"Flash"
 	],
 
 	"Runes"           : {
 		"Paths"         : [
 			"Precision",
-			"Domination"
+			"Sorcery"
 		],
 		"Primary"       : [
-			"Conqueror",
+			"Fleet Footwork",
 			"Presence of Mind",
 			"Legend: Tenacity",
 			"Last Stand"
 		],
 		"Secondary"     : [
-			"Eyeball Collection",
-			"Ravenous Hunter"
+			"Manaflow Band",
+			"Transcendence"
 		],
 		"Shards"        : [
-			"Attack Speed",
+			"Ability Haste",
 			"Adaptive Force",
 			"Armor"
 		]
@@ -41,45 +41,46 @@
 		{
 			"Label"       : "Start",
 			"Options"     : [
-				"Hunter's Talisman",
-				"Refillable Potion",
-				"Oracle Lens"
+				"Doran's Ring",
+				"Health Potion",
+				"Stealth Ward"
 			]
 		},
 		{
-			"Label"       : "Pick 1",
-			"Options"     : [
-				"Skirmisher's Sabre (Runic Echoes)",
-				"Stalker's Blade (Runic Echoes)"
-			]
-		},
-		{
-			"Label"       : "Pick 1",
+			"Label"       : "Boots",
 			"Options"     : [
 				"Sorcerer's Shoes",
+				"Ionian Boots of Lucidity",
 				"Mercury's Treads",
-				"Ninja Tabi"
+				"Plated Steelcaps"
 			]
 		},
 		{
-			"Label"       : "Pick 4",
+			"Label"       : "Mythic",
 			"Options"     : [
-				"Hextech Protobelt-01",
-				"Iceborn Gauntlet",
-				"Spirit Visage",
-				"Liandry's Torment",
-				"Morellonomicon",
+				"Everfrost",
+				"Liandry's Anguish",
+				"Riftmaker",
+				"Hextech Rocketbelt",
+				"Luden's Tempest",
+				"Night Harvester"
+			]
+		},
+		{
+			"Label"       : "Legendaries",
+			"Options"     : [
+				"Demonic Embrace",
 				"Zhonya's Hourglass",
-				"Nashor's Tooth",
+				"Banshee's Veil",
+				"Spirit Visage",
+				"Cosmic Drive",
+				"Rylai's Crystal Scepter",
 				"Lich Bane",
-				"Mejai's Soulstealer",
+				"Nashor's Tooth",
+				"Morellonomicon",
 				"Rabadon's Deathcap",
 				"Void Staff",
-				"Banshee's Veil",
-				"Hextech Gunblade",
-				"Rod of Ages",
-				"Abyssal Mask",
-				"Frozen Heart"
+				"Mejai's Soulstealer"
 			]
 		},
 		{

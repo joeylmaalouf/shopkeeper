@@ -1,15 +1,14 @@
 {
-	"Champion"        : "Riven",
-	"Role"            : "Top",
+	"Champion"        : "Shyvana",
+	"Role"            : "Jungle",
 
-	"Skin"            : "Spirit Blossom",
-	"Chroma"          : "Night Blossom",
+	"Skin"            : "Ironscale",
 
 	"Creator"         : "JDog",
 	"Patch"           : "v10.23",
 
 	"Summoner Spells" : [
-		"Teleport",
+		"Smite",
 		"Flash"
 	],
 
@@ -25,68 +24,67 @@
 			"Last Stand"
 		],
 		"Secondary"     : [
-			"Transcendence",
+			"Celerity",
 			"Gathering Storm"
 		],
 		"Shards"        : [
-			"Ability Haste",
+			"Attack Speed",
 			"Adaptive Force",
 			"Armor"
 		]
 	},
 
-	"Abilities"       : "QEWQQRQWQWREEEERWW",
+	"Abilities"       : "EQWEEREQEQRQQWWRWW",
 
 	"Items"           : [
 		{
 			"Label"       : "Start",
 			"Options"     : [
-				"Long Sword",
-				"Health Potion",
-				"Stealth Ward"
+				"Emberknife",
+				"Refillable Potion",
+				"Oracle Lens"
 			]
 		},
 		{
 			"Label"       : "Boots",
 			"Options"     : [
-				"Ionian Boots of Lucidity",
-				"Mercury's Treads",
-				"Plated Steelcaps"
+				"Berserker's Greaves",
+				"Sorcerer's Shoes",
+				"Ionian Boots of Lucidity"
 			]
 		},
 		{
 			"Label"       : "Mythic",
 			"Options"     : [
-				"Goredrinker",
-				"Stridebreaker",
 				"Divine Sunderer",
-				"Trinity Force",
-				"Eclipse",
-				"Prowler's Claw",
-				"Galeforce"
+				"Frostfire Gauntlet",
+				"Riftmaker",
+				"Night Harvester"
 			]
 		},
 		{
 			"Label"       : "Legendaries",
 			"Options"     : [
+				"Wit's End",
+				"Blade of the Ruined King",
+				"Nashor's Tooth",
+				"Lich Bane",
+				"Titanic Hydra",
 				"Ravenous Hydra",
-				"Black Cleaver",
 				"Sterak's Gage",
-				"Serylda's Grudge",
 				"Chempunk Chainsword",
-				"Essence Reaver",
-				"Navori Quickblades",
-				"Guardian Angel",
 				"Death's Dance",
 				"Silvermere Dawn",
-				"Maw of Malmortius",
-				"Spirit Visage"
+				"Demonic Embrace",
+				"Morellonomicon"
 			]
 		},
 		{
 			"Label"       : "Consumables",
 			"Options"     : [
 				"Elixir of Wrath",
+				"Elixir of Sorcery",
+				"Elixir of Iron",
 				"Control Ward"
 			]
 		}

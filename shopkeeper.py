@@ -25,7 +25,7 @@ FONT_SIZES = {
 FONT_HEIGHT_BONUS = 2 # the font is usually drawn a few pixels short of its supposed height
 FONT_FILEPATH = '/mnt/c/Windows/Fonts/CarroisGothicSC-Regular.ttf'
 WIKI_BASE_URL = 'https://leagueoflegends.fandom.com/wiki'
-WIKI_IMAGE_URL_PATTERN = r'https://vignette\.wikia\.nocookie\.net/leagueoflegends/images/.+?\.(?:jpg|png)'
+WIKI_IMAGE_URL_PATTERN = r'https://static\.wikia\.nocookie\.net/leagueoflegends/images/.+?\.(?:jpg|png)'
 ENCHANTABLE_ITEMS = ['Stalker\'s Blade', 'Skirmisher\'s Sabre', 'Pridestalker\'s Blade', 'Tracker\'s Knife',  'Ranger\'s Trailblazer',  'Poacher\'s Knife']
 
 
@@ -135,25 +135,25 @@ def draw_summoner_spells(build_image, build_data):
 # draw_runes: gets the rune images for the loaded build_data and draws them on build_image in two columns, keystone/primary and secondary/shards
 def draw_runes(build_image, build_data):
 	path_images = get_images(
-		'/'.join((WIKI_BASE_URL, 'Runes_Reforged')),
-		re.compile(r'<img src="(%s).*?</a><br />.*?">(\w+)</a>' % WIKI_IMAGE_URL_PATTERN),
-		True
+		'/'.join((WIKI_BASE_URL, 'Rune')),
+		re.compile(r'<li><img alt="(\w+) icon.png".*?data-src="(%s)' % WIKI_IMAGE_URL_PATTERN),
+		False
 	)
 	keystone_images = get_images(
-		'/'.join((WIKI_BASE_URL, 'Runes_Reforged')),
+		'/'.join((WIKI_BASE_URL, 'Rune')),
 		re.compile(r'title="([\w :;&#]+)".*?data-src="(%s/revision/latest/scale-to-width-down/52)' % WIKI_IMAGE_URL_PATTERN),
 		False,
 		{ '52': '112' } # the image is 52px on this page, but we want it at 112px; we can't just use the base link because it's 256px there
 	)
 	rune_images = get_images(
-		'/'.join((WIKI_BASE_URL, 'Runes_Reforged')),
+		'/'.join((WIKI_BASE_URL, 'Rune')),
 		re.compile(r'title="([\w :;&#]+)".*?data-src="(%s/revision/latest/scale-to-width-down/52)' % WIKI_IMAGE_URL_PATTERN),
 		False,
 		{ '52': '64' } # the image is 52px on this page, but we want it at 64px; we can't just use the base link because it's 108px there
 	)
 	shard_images = get_images(
-		'/'.join((WIKI_BASE_URL, 'Runes_Reforged')),
-		re.compile(r'alt="Rune shard ([\w ]+)".*?data-src="(%s/revision/latest/scale-to-width-down/30)' % WIKI_IMAGE_URL_PATTERN),
+		'/'.join((WIKI_BASE_URL, 'Rune')),
+		re.compile(r'<img alt="Rune shard ([\w ]+)\.png".*?data-src="(%s/revision/latest/scale-to-width-down/30)' % WIKI_IMAGE_URL_PATTERN),
 		False,
 		{ '30': '32' } # the image is 30px on this page, but we want it at 32px; we can't just use the base link because it's 35px there
 	)
@@ -217,7 +217,7 @@ def draw_runes(build_image, build_data):
 def draw_abilities(build_image, build_data):
 	ability_images = get_images(
 		'/'.join((WIKI_BASE_URL, build_data.get('Champion'), 'Abilities')),
-		re.compile(r'<div class="skill skill_(\w)".*?data-src="(%s)' % WIKI_IMAGE_URL_PATTERN, re.DOTALL)
+		re.compile(r'<div class="skill skill_(\w)".*?<table style="width:100%%;">.*?data-src="(%s)' % WIKI_IMAGE_URL_PATTERN, re.DOTALL)
 	)
 	ability_drawer = ImageDraw.Draw(build_image)
 
@@ -251,7 +251,7 @@ def draw_abilities(build_image, build_data):
 def draw_items(build_image, build_data):
 	item_images = get_images(
 		'/'.join((WIKI_BASE_URL, 'Item')),
-		re.compile(r'<div class="item-icon" data-param="(.*?)".*?data-src="(%s)' % WIKI_IMAGE_URL_PATTERN, re.DOTALL)
+		re.compile(r'<div class="item-icon" data-param="(.*?)".*?src="(%s)' % WIKI_IMAGE_URL_PATTERN, re.DOTALL)
 	)
 	item_drawer = ImageDraw.Draw(build_image)
 
@@ -297,7 +297,7 @@ def draw_items(build_image, build_data):
 							item_image = item_images.get(enchantable_item.replace('\'', '&#39;'))
 						break
 				# use the base image if there's no enchantment specified
-				# which is the most likely option, since currently only jungle items have enchantments
+				# which is the most likely option, since only the old jungle items have enchantments
 				else:
 					item_image = item_images.get(item_name.replace('\'', '&#39;'))
 

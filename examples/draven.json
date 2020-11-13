@@ -1,0 +1,90 @@
+{
+	"Champion"        : "Draven",
+	"Role"            : "Bottom",
+
+	"Skin"            : "Santa",
+
+	"Creator"         : "JDog",
+	"Patch"           : "v10.23",
+
+	"Summoner Spells" : [
+		"Heal",
+		"Flash"
+	],
+
+	"Runes"           : {
+		"Paths"         : [
+			"Domination",
+			"Precision"
+		],
+		"Primary"       : [
+			"Hail of Blades",
+			"Taste of Blood",
+			"Eyeball Collection",
+			"Ravenous Hunter"
+		],
+		"Secondary"     : [
+			"Presence of Mind",
+			"Legend: Bloodline"
+		],
+		"Shards"        : [
+			"Attack Speed",
+			"Adaptive Force",
+			"Armor"
+		]
+	},
+
+	"Abilities"       : "QWEQQRQWQWRWWEEREE",
+
+	"Items"           : [
+		{
+			"Label"       : "Start",
+			"Options"     : [
+				"Doran's Blade",
+				"Health Potion",
+				"Stealth Ward"
+			]
+		},
+		{
+			"Label"       : "Boots",
+			"Options"     : [
+				"Berserker's Greaves",
+				"Boots of Swiftness",
+				"Plated Steelcaps"
+			]
+		},
+		{
+			"Label"       : "Mythic",
+			"Options"     : [
+				"Eclipse",
+				"Immortal Shieldbow",
+				"Galeforce",
+				"Kraken Slayer"
+			]
+		},
+		{
+			"Label"       : "Legendaries",
+			"Options"     : [
+				"Bloodthirster",
+				"Sanguine Blade",
+				"Mortal Reminder",
+				"Lord Dominik's Regards",
+				"The Collector",
+				"Edge of Night",
+				"Serpent's Fang",
+				"Guardian Angel",
+				"Infinity Edge",
+				"Essence Reaver",
+				"Rapid Firecannon",
+				"Stormrazor"
+			]
+		},
+		{
+			"Label"       : "Consumables",
+			"Options"     : [
+				"Elixir of Wrath",
+				"Control Ward"
+			]
+		}
+	]
+}
