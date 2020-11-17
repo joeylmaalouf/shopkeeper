@@ -57,13 +57,12 @@
 		{
 			"Label"       : "Mythic",
 			"Options"     : [
+				"Divine Sunderer",
 				"Goredrinker",
 				"Stridebreaker",
-				"Divine Sunderer",
-				"Trinity Force",
+				"Galeforce",
 				"Eclipse",
-				"Prowler's Claw",
-				"Galeforce"
+				"Prowler's Claw"
 			]
 		},
 		{
