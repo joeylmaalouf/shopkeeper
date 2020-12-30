@@ -1,0 +1,80 @@
+{
+	"Champion"        : "Shadow Fiend",
+	"Role"            : "Middle",
+
+	"Skin"            : "Demon Eater",
+	"Background"      : "https://i.pinimg.com/originals/32/d4/5f/32d45fc400eb4c24d60b7197ad8e3f11.jpg",
+
+	"Creator"         : "JDog",
+	"Patch"           : "v7.28",
+
+	"Abilities"       : "QDQDQDQDRTFRFFTF R T    T",
+
+	"Items"           : [
+		{
+			"Label"       : "Early",
+			"Options"     : [
+				"Wraith Band",
+				"Tango",
+				"Bottle"
+			]
+		},
+		{
+			"Label"       : "Middle",
+			"Options"     : [
+				"Dragon Lance",
+				"Blink Dagger",
+				"Eul's Scepter of Divinity",
+				"Black King Bar",
+				"Power Treads",
+				"Boots of Travel"
+			]
+		},
+		{
+			"Label"       : "Late (Attacker)",
+			"Options"     : [
+				"Desolator",
+				"Daedalus",
+				"Butterfly",
+				"Satanic",
+				"Eye of Skadi",
+				"Manta Style",
+				"Silver Edge",
+				"Sange and Yasha",
+				"Assault Cuirass",
+				"Monkey King Bar",
+				"Hurricane Pike"
+			]
+		},
+		{
+			"Label"       : "Late (Caster)",
+			"Options"     : [
+				"Arcane Blink",
+				"Scythe of Vyse",
+				"Aghanim's Scepter",
+				"Octarine Core",
+				"Wind Waker",
+				"Refresher Orb",
+				"Ethereal Blade",
+				"Bloodthorn"
+			]
+		},
+		{
+			"Label"       : "Consumables",
+			"Options"     : [
+				"Aghanim's Shard",
+				"Aghanim's Blessing",
+				"Moon Shard"
+			]
+		},
+		{
+			"Label"       : "Neutrals",
+			"Options"     : [
+				"Titan Sliver",
+				"Spell Prism",
+				"Illusionist's Cape",
+				"Stygian Desolator"
+			]
+		}
+	]
+}

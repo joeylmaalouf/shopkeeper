@@ -1,4 +1,4 @@
-# lol-shopkeeper
+#!/usr/bin/python
 
 # imported modules
 from PIL import Image, ImageDraw, ImageFont, ImageOps
