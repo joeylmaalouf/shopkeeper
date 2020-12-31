@@ -40,39 +40,40 @@
 				"Eye of Skadi",
 				"Manta Style",
 				"Silver Edge",
-				"Sange and Yasha",
 				"Assault Cuirass",
+				"Hurricane Pike",
+				"Sange and Yasha",
 				"Monkey King Bar",
-				"Hurricane Pike"
+				"Moon Shard"
 			]
 		},
 		{
 			"Label"       : "Late (Caster)",
 			"Options"     : [
 				"Arcane Blink",
-				"Scythe of Vyse",
-				"Aghanim's Scepter",
 				"Octarine Core",
-				"Wind Waker",
-				"Refresher Orb",
-				"Ethereal Blade",
-				"Bloodthorn"
-			]
-		},
-		{
-			"Label"       : "Consumables",
-			"Options"     : [
 				"Aghanim's Shard",
-				"Aghanim's Blessing",
-				"Moon Shard"
+				"Aghanim's Scepter",
+				"Wind Waker",
+				"Scythe of Vyse",
+				"Ethereal Blade",
+				"Refresher Orb",
+				"Bloodthorn",
+				"Bloodstone",
+				"Yasha and Kaya",
+				"Kaya and Sange"
 			]
 		},
 		{
 			"Label"       : "Neutrals",
 			"Options"     : [
+				"Grove Bow",
 				"Titan Sliver",
-				"Spell Prism",
+				"Quickening Charm",
 				"Illusionist's Cape",
+				"Timeless Relic",
+				"Spell Prism",
+				"Seer Stone",
 				"Stygian Desolator"
 			]
 		}
