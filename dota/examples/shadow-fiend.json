@@ -15,19 +15,26 @@
 			"Label"       : "Early",
 			"Options"     : [
 				"Wraith Band",
+				"Enchanted Mango",
 				"Tango",
-				"Bottle"
+				"Bottle",
+				"Wraith Band",
+				"Clarity",
+				"Magic Stick",
+				"Boots of Speed"
 			]
 		},
 		{
 			"Label"       : "Middle",
 			"Options"     : [
+				"Power Treads",
 				"Dragon Lance",
+				"Shadow Blade",
+				"Yasha",
+				"Boots of Travel",
 				"Blink Dagger",
 				"Eul's Scepter of Divinity",
-				"Black King Bar",
-				"Power Treads",
-				"Boots of Travel"
+				"Black King Bar"
 			]
 		},
 		{
@@ -50,18 +57,14 @@
 		{
 			"Label"       : "Late (Caster)",
 			"Options"     : [
-				"Arcane Blink",
-				"Octarine Core",
 				"Aghanim's Shard",
 				"Aghanim's Scepter",
-				"Wind Waker",
-				"Scythe of Vyse",
+				"Arcane Blink",
 				"Ethereal Blade",
-				"Refresher Orb",
-				"Bloodthorn",
-				"Bloodstone",
+				"Scythe of Vyse",
 				"Yasha and Kaya",
-				"Kaya and Sange"
+				"Octarine Core",
+				"Refresher Orb"
 			]
 		},
 		{
