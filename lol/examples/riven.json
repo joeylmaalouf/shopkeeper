@@ -57,29 +57,31 @@
 		{
 			"Label"       : "Mythic",
 			"Options"     : [
-				"Divine Sunderer",
+				"Eclipse",
 				"Goredrinker",
 				"Stridebreaker",
-				"Galeforce",
-				"Eclipse",
-				"Prowler's Claw"
+				"Divine Sunderer"
 			]
 		},
 		{
 			"Label"       : "Legendaries",
 			"Options"     : [
-				"Ravenous Hydra",
 				"Black Cleaver",
 				"Sterak's Gage",
-				"Serylda's Grudge",
-				"Chempunk Chainsword",
+				"Ravenous Hydra",
 				"Essence Reaver",
-				"Navori Quickblades",
-				"Guardian Angel",
+				"Spirit Visage",
 				"Death's Dance",
+				"Guardian Angel",
+				"The Collector",
 				"Silvermere Dawn",
-				"Maw of Malmortius",
-				"Spirit Visage"
+				"Chempunk Chainsword",
+				"Serylda's Grudge",
+				"Navori Quickblades",
+				"Mercurial Scimitar",
+				"Mortal Reminder",
+				"Lord Dominik's Regards",
+				"Infinity Edge"
 			]
 		},
 		{

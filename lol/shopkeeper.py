@@ -251,7 +251,7 @@ def draw_abilities(build_image, build_data):
 def draw_items(build_image, build_data):
 	item_images = get_images(
 		'/'.join((WIKI_BASE_URL, 'Item')),
-		re.compile(r'<div class="item-icon" data-param="(.*?)".*?src="(%s)' % WIKI_IMAGE_URL_PATTERN, re.DOTALL)
+		re.compile(r'<div class="item-icon" data-item="(.*?)".*?src="(%s)' % WIKI_IMAGE_URL_PATTERN, re.DOTALL)
 	)
 	item_drawer = ImageDraw.Draw(build_image)
 

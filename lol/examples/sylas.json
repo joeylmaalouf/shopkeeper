@@ -69,14 +69,14 @@
 		{
 			"Label"       : "Legendaries",
 			"Options"     : [
+				"Cosmic Drive",
 				"Demonic Embrace",
 				"Zhonya's Hourglass",
 				"Banshee's Veil",
-				"Spirit Visage",
-				"Cosmic Drive",
 				"Rylai's Crystal Scepter",
 				"Lich Bane",
 				"Nashor's Tooth",
+				"Spirit Visage",
 				"Morellonomicon",
 				"Rabadon's Deathcap",
 				"Void Staff",
