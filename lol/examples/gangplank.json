@@ -1,0 +1,92 @@
+{
+	"Champion"        : "Gangplank",
+	"Role"            : "Top",
+
+	"Skin"            : "Gangplank the Betrayer",
+	"Chroma"          : "Ruby",
+
+	"Creator"         : "JDog",
+	"Patch"           : "v12.13",
+
+	"Summoner Spells" : [
+		"Ignite",
+		"Flash"
+	],
+
+	"Runes"           : {
+		"Paths"       : [
+			"Inspiration",
+			"Sorcery"
+		],
+		"Primary"     : [
+			"First Strike",
+			"Magical Footwear",
+			"Future's Market",
+			"Cosmic Insight"
+		],
+		"Secondary"   : [
+			"Manaflow Band",
+			"Transcendence"
+		],
+		"Shards"      : [
+			"Adaptive Force",
+			"Adaptive Force",
+			"Armor"
+		]
+	},
+
+	"Abilities"       : "QEWQQRQEQEREEWWRWW",
+
+	"Items"           : [
+		{
+			"Label"   : "Start",
+			"Options" : [
+				"Corrupting Potion",
+				"Stealth Ward"
+			]
+		},
+		{
+			"Label"   : "Boots",
+			"Options" : [
+				"Ionian Boots of Lucidity",
+				"Plated Steelcaps",
+				"Boots of Swiftness"
+			]
+		},
+		{
+			"Label"   : "Crit",
+			"Options" : [
+				"Essence Reaver",
+				"Prowler's Claw",
+				"The Collector",
+				"Lord Dominik's Regards",
+				"Infinity Edge",
+				"Mortal Reminder",
+				"Galeforce",
+				"Navori Quickblades"
+			]
+		},
+		{
+			"Label"   : "Bruiser",
+			"Options" : [
+				"Trinity Force",
+				"Ravenous Hydra",
+				"Death's Dance",
+				"Maw of Malmortius",
+				"Chempunk Chainsword",
+				"Frozen Heart",
+				"Spirit Visage",
+				"Anathema's Chains"
+			]
+		},
+		{
+			"Label"   : "Consumables",
+			"Options" : [
+				"Elixir of Wrath",
+				"Elixir of Sorcery",
+				"Elixir of Iron",
+				"Control Ward"
+			]
+		}
+	]
+}

@@ -23,7 +23,7 @@ FONT_SIZES = {
 	'H4': 24
 }
 FONT_HEIGHT_BONUS = 2 # the font is usually drawn a few pixels short of its supposed height
-FONT_FILEPATH = '/mnt/c/Windows/Fonts/CarroisGothicSC-Regular.ttf'
+FONT_FILEPATH = '../shared/CarroisGothicSC-Regular.ttf'
 WIKI_BASE_URL = 'https://leagueoflegends.fandom.com/wiki'
 WIKI_IMAGE_URL_PATTERN = r'https://static\.wikia\.nocookie\.net/leagueoflegends/images/.+?\.(?:jpg|png)'
 ENCHANTABLE_ITEMS = ['Stalker\'s Blade', 'Skirmisher\'s Sabre', 'Pridestalker\'s Blade', 'Tracker\'s Knife',  'Ranger\'s Trailblazer',  'Poacher\'s Knife']
@@ -32,10 +32,10 @@ ENCHANTABLE_ITEMS = ['Stalker\'s Blade', 'Skirmisher\'s Sabre', 'Pridestalker\'s
 # main: loads the given data from sys_argv and runs each draw function in succession to get the final image
 def main(sys_argv):
 	if len(sys_argv) < 2:
-		print 'Error: no input file given.'
+		print('Error: no input file given.')
 		sys.exit(1)
 	elif not sys_argv[1].endswith('.json'):
-		print 'Error: argument must be a .json file.'
+		print('Error: argument must be a .json file.')
 		sys.exit(1)
 
 	# we're gonna put the output image in the same location as the input json, just with a different extension
@@ -49,13 +49,14 @@ def main(sys_argv):
 	build_image = Image.new('RGB', BUILD_IMAGE_DIMENSIONS, (0, 0, 0))
 	for draw_function in (draw_background, draw_metadata, draw_summoner_spells, draw_runes, draw_abilities, draw_items):
 		build_image = draw_function(build_image, build_data)
+		print("Finished step: " + draw_function.__name__)
 
 	if build_image:
 		build_image.save(output_filepath)
-		print 'Success: created "%s" from "%s".' % (output_filepath, input_filepath)
+		print('Success: created "%s" from "%s".' % (output_filepath, input_filepath))
 		sys.exit(0)
 	else:
-		print 'Error: something went wrong while creating the build image. Perhaps malformed data?'
+		print('Error: something went wrong while creating the build image. Perhaps malformed data?')
 		sys.exit(1)
 
 
@@ -153,17 +154,17 @@ def draw_runes(build_image, build_data):
 	)
 	shard_images = get_images(
 		'/'.join((WIKI_BASE_URL, 'Rune')),
-		re.compile(r'<img alt="Rune shard ([\w ]+)\.png".*?data-src="(%s/revision/latest/scale-to-width-down/30)' % WIKI_IMAGE_URL_PATTERN),
+		re.compile(r'data-image-name="Rune shard ([\w ]+)\.png".*?data-src="(%s/revision/latest/scale-to-width-down/30)' % WIKI_IMAGE_URL_PATTERN),
 		False,
 		{ '30': '32' } # the image is 30px on this page, but we want it at 32px; we can't just use the base link because it's 35px there
 	)
 
 	# path images
 	rune_data = build_data.get('Runes')
-	x_center_line = 128 + 1 + 64 / 2
+	x_center_line = 128 + 1 + int(64 / 2)
 	x_offset, y_offset = x_center_line - int(85 / 2), 448
 	for path_name in rune_data.get('Paths'):
-		path_image = path_images.get(path_name)
+		path_image = path_images.get(path_name.replace('\'', '&#39;'))
 		if path_image:
 			# remove the half-transparent backgrounds of these images
 			pixel_array = path_image.load()
@@ -178,15 +179,15 @@ def draw_runes(build_image, build_data):
 	x_offset = x_center_line - int(112 / 2)
 	y_offset += 85 + 32
 	keystone_name = rune_data.get('Primary')[0] # just get the keystone, we'll do the others below
-	keystone_image = keystone_images.get(keystone_name)
+	keystone_image = keystone_images.get(keystone_name.replace('\'', '&#39;'))
 	if keystone_image:
 		build_image.paste(keystone_image, (x_offset, y_offset), keystone_image)
 
 	# primary images
 	x_offset = x_center_line - int(64 / 2)
-	y_offset += 112 + 32 / 2
+	y_offset += 112 + int(32 / 2)
 	for rune_name in rune_data.get('Primary')[1:]: # skip the keystone, we did that above
-		rune_image = rune_images.get(rune_name)
+		rune_image = rune_images.get(rune_name.replace('\'', '&#39;'))
 		if rune_image:
 			build_image.paste(rune_image, (x_offset, y_offset), rune_image)
 			y_offset += 64 + 32
@@ -195,7 +196,7 @@ def draw_runes(build_image, build_data):
 	x_offset = x_center_line - int(64 / 2) + 160
 	y_offset = 448 + 85 + 32 + 112 - 64 - 32
 	for rune_name in rune_data.get('Secondary'):
-		rune_image = rune_images.get(rune_name)
+		rune_image = rune_images.get(rune_name.replace('\'', '&#39;'))
 		if rune_image:
 			build_image.paste(rune_image, (x_offset, y_offset), rune_image)
 			y_offset += 64 + 32
@@ -204,7 +205,7 @@ def draw_runes(build_image, build_data):
 	x_offset = x_center_line - int(32 / 2) + 160
 	y_offset += 16
 	for shard_name in rune_data.get('Shards'):
-		shard_image = shard_images.get(shard_name)
+		shard_image = shard_images.get(shard_name.replace('\'', '&#39;'))
 		if shard_image:
 			build_image.paste(shard_image, (x_offset, y_offset), shard_image)
 			y_offset += 32 + 32
@@ -216,8 +217,8 @@ def draw_runes(build_image, build_data):
 # with level numbers and ability letters for each ability listed in the build data's ability order
 def draw_abilities(build_image, build_data):
 	ability_images = get_images(
-		'/'.join((WIKI_BASE_URL, build_data.get('Champion'), 'Abilities')),
-		re.compile(r'<div class="skill skill_(\w)".*?<table style="width:100%%;">.*?data-src="(%s)' % WIKI_IMAGE_URL_PATTERN, re.DOTALL)
+		'/'.join((WIKI_BASE_URL, build_data.get('Champion'), 'LoL')),
+		re.compile(r'<div class="skill skill_(\w)".*?data-source="primary_icon">\s*?<a href="(%s)' % WIKI_IMAGE_URL_PATTERN, re.DOTALL)
 	)
 	ability_drawer = ImageDraw.Draw(build_image)
 
@@ -251,7 +252,7 @@ def draw_abilities(build_image, build_data):
 def draw_items(build_image, build_data):
 	item_images = get_images(
 		'/'.join((WIKI_BASE_URL, 'Item')),
-		re.compile(r'<div class="item-icon" data-item="(.*?)".*?src="(%s)' % WIKI_IMAGE_URL_PATTERN, re.DOTALL)
+		re.compile(r'<div class="item-icon".*?data-item="(.*?)".*?src="(%s)' % WIKI_IMAGE_URL_PATTERN, re.DOTALL)
 	)
 	item_drawer = ImageDraw.Draw(build_image)
 
@@ -339,8 +340,8 @@ def center_text(build_image, outline_rectangle, draw_text, font_size):
 	scaled_font = ImageFont.truetype(FONT_FILEPATH, font_size)
 	text_width, text_height = text_drawer.textsize(draw_text, scaled_font)
 	text_position = (
-		outline_rectangle[0][0] + (outline_width - text_width) / 2,
-		outline_rectangle[0][1] + (outline_height - text_height) / 2 - FONT_HEIGHT_BONUS
+		outline_rectangle[0][0] + int((outline_width - text_width) / 2),
+		outline_rectangle[0][1] + int((outline_height - text_height) / 2) - FONT_HEIGHT_BONUS
 	)
 	text_drawer.text(text_position, draw_text, TEXT_COLOR, scaled_font)
 	return build_image
